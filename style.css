@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Header part of the webpage*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-text {
+    font-size: 1rem;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  /* Side bars of the webpage */
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* All Main Contents */
+  main {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  .overview h3 {
+    margin-top: 0;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000; 
+    border-radius: 8px;
+  }
+  
+  .thread-card {
+    border: 2px solid #000; 
+  }
+  
+  .card h4 {
+    margin-top: 0;
+  }
+  
+  .video-thumbnail iframe {
+    width: 100%;
+    height: 150px;
+    border: none;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* All Tool Icons */
+  .tool-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tool {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #000; 
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tool:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Responsive Design part */
+  @media (max-width: 760px) {
+    .sidebar {
+      width: 95%;
+      height: auto;
+      position: relative;
+    }
+  
+    main {
+      margin-left: 0;
+    }
+  
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
