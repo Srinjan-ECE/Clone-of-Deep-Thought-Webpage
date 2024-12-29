@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="journey-board">
+    <!-- Header part of the webpage -->
+    <header class="header">
+      <div class="logo">
+        <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Deep Thought Logo">
+      </div>
+      <h2>Technical Project Management</h2>
+      <div class="profile">
+        <div class="profile-text">Profile</div>
+      </div>
+    </header>
+
+    <!-- Sidebar Toggle Button -->
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Toggle Journey Board</button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h3>Journey Board</h3>
+      <ul>
+        <li onclick="navigateTo('Technical Project Management')">Technical Project Management</li>
+        <li onclick="navigateTo('ThreadBuild')">ThreadBuild</li>
+        <li onclick="navigateTo('Structure your Pointers')">Structure your Pointers</li>
+        <li onclick="navigateTo('6A Method')">6A Method</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Overview Section -->
+      <section class="overview">
+        <h3>Explore the world of management</h3>
+        <p>
+          As a project manager, you play an integral role in leading a project through initiation, planning, execution,
+          monitoring, controlling, and completion. Learn how you can manage each and every step of your life.
+        </p>
+      </section>
+      
+      <!-- Cards Section -->
+      <div class="card-grid">
+        <article class="card">
+          <h4>Technical Project Management</h4>
+          <p>Zoom in: Alignment Scope of Agile Specific Accessible Supporting Aspect.</p>
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/live/TiMRwri1xJ8?si=-u3qQPQwY_apeKk8" title="Video"></iframe>
+          </div>
+          <button onclick="handleButtonClick('Technical Project Management')">Learn More</button>
+        </article>
+        <article class="card thread-card">
+          <h4>ThreadBuild</h4>
+          <p>Watch the video and add threads relevant to the topic.</p>
+          <button onclick="handleButtonClick('ThreadBuild')">Save Thread</button>
+        </article>
+        <article class="card">
+          <h4>Structure your Pointers</h4>
+          <p>Write 200 to 400 words to structure your understanding.</p>
+          <textarea placeholder="Enter your text"></textarea>
+          <button onclick="handleButtonClick('Structure your Pointers')">Submit</button>
+        </article>
+        <article class="card">
+          <h4>6A Method</h4>
+          <p>Explore more about research methods.</p>
+          <button onclick="handleButtonClick('6A Method')">Explore</button>
+        </article>
+      </div>
+    </main>
+
+    <!-- Tool Icons -->
+    <div class="tool-icons">
+      <div class="tool" onclick="handleToolClick('Help')">Help</div>
+      <div class="tool" onclick="handleToolClick('Settings')">Settings</div>
+      <div class="tool" onclick="handleToolClick('Info')">Info</div>
+    </div>
+  </div>
+</body>
+</html>
+
